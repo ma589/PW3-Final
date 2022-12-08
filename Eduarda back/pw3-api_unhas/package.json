@@ -1,0 +1,23 @@
+{
+  "name": "madu.nails",
+  "version": "1.0.0",
+  "description": "APIREST designer de unhas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "pw3",
+    "nodejs",
+    "etec",
+    "barueri",
+    "3DS"
+  ],
+  "author": "MARIA EDUARDA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
+  }
+}
