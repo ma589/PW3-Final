@@ -1,0 +1,38 @@
+<%- include('../partials/header.ejs')  %>
+
+    <title>LISTAGEM DE SERVIÇOS - MADU.NAILS</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <%- include('../partials/menu.ejs')  %>
+
+        <div class="card mt-2">
+            <div class="card-header">LISTAGEM DE SERVIÇOS</div>
+        </div>
+
+        <%
+            servicos.forEach(servico=>{
+        %>
+
+            <div class="card mt-2">
+
+                <div class="card-body">
+                    <%= servico.NOME_SERVICO %>
+                </div>
+
+                <a href="/ListarServicos/<%= servico.id %>" class="btn btn-success mt-1">EDITAR</a>
+                <a href="/DeletarServico/<%= servico.id %>" class="btn btn-danger mt-1">EXCLUIR</a>
+
+            </div>
+
+        <% }) %>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs')  %>
